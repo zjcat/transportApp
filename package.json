@@ -1,0 +1,36 @@
+{
+  "name": "transportapp",
+  "version": "1.0.0",
+  "description": "运输app`",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8089",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8089",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjcat/transportApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zjcat/transportApp/issues"
+  },
+  "homepage": "https://github.com/zjcat/transportApp#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "html-withimg-loader": "^0.1.16",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.15.0"
+  },
+  "dependencies": {
+    "hogan.js": "^3.0.2"
+  }
+}
